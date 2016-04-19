@@ -1,0 +1,41 @@
+//
+//  PCH.pch
+//  Delete_sort_dome
+//
+//  Created by 财通网络 on 16/3/23.
+//  Copyright © 2016年 财通网络. All rights reserved.
+//
+
+#ifndef PCH_pch
+#define PCH_pch
+
+#define kStatusHeight 20
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+//  **********************   设置间隔和宽高和每行的数量  **********************
+#define padding 20
+#define itemPerLine 3   //  每行的数量
+#define kItemW (kScreenW-padding*(itemPerLine+1))/itemPerLine
+#define kItemH 100      //  按钮的高度
+
+typedef enum{
+    topViewClick = 0,
+    FromTopToTop = 1,
+    FromTopToTopLast = 2,
+    FromTopToBottomHead = 3,
+    FromBottomToTopLast = 4
+} animateType;
+
+
+typedef enum{
+    top = 0,
+    bottom = 1
+}itemLocation;
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PCH_pch */
